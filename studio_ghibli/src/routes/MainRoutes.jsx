@@ -3,6 +3,7 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 // import {Provider} from "react-redux"
 
 import Home from "../pages/Home";
+import Drawer from "../pages/Drawer";
 
 const MainRoutes = () => {
   return (
@@ -10,6 +11,7 @@ const MainRoutes = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/drawer" component={Drawer} />
       </Switch>
     </BrowserRouter>
     //   </Provider>
